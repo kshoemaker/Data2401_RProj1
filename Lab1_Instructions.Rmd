@@ -1,0 +1,21 @@
+---
+title: "Lab 1 - Hello, R!"
+author: "Dr. Shoemaker"
+date: "1/22/2020"
+output: html_document
+---
+
+Due: Jan 30th at 5 pm (a.k.a, this is Homework 2)
+
+# Intro
+
+The main goal of this lab is to introduce you to R, markdown and RStudio, which we will be using throughout the course both to learn the statistical concepts discussed in the course and to analyze real data and come to informed conclusions.
+
+An additional goal is to let you practice using git and GitHub, the collaboration and version control system.
+
+As the semester progresses, you are encouraged to explore beyond what the labs dictate; a willingness to experiment will make you a much better programmer. Before we get to that stage, however, you need to build some basic fluency in R. Today we begin with the fundamental building blocks of R and RStudio: the interface, reading in data, and basic commands.
+
+# Getting Started! 
+
+This assignment will begin with you getting this information from GitHub. 
+
