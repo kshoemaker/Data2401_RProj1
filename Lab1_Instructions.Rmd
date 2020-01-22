@@ -17,5 +17,30 @@ As the semester progresses, you are encouraged to explore beyond what the labs d
 
 # Getting Started! 
 
-This assignment will begin with you getting this information from GitHub. 
+This assignment begins with you getting this information from GitHub. 
+
+You can find my repository for this project at https://github.com/kshoemaker/Data2401_Lab1.git 
+
+- Fork this repository to your own account, then click the green clone button. Get the link to clone via HTTPS by clicking the little clipboard, then go to RStudio
+- In RStudio, you're going to start a "new project". Click `Version Control` $\rightarrow$ `Git` $\rightarrow$ and put your link to the repository here. Make sure the file for where the subdirectory is going is somewhere you can find later. 
+- Click create and you're good to go! 
+
+# Packages
+
+A quick peek at the future, we're going to be using some `packages`. R uses packages as a way for users to share code and data with each other in a _reproducible_ way. All packages are freely available, and have documentation that tells you how to use the code and data inside. 
+
+In this lab, we'll use `datasauRus` (which contains the data we'll use) and `tidyverse` (a collection of packages for doing data analysis in a "tidy" way).
+
+We'll install these packages by running the following commands in the console: 
+
+Install these packages by running the following in the console.
+
+> `install.packages("tidyverse")` \
+> `install.packages("datasauRus")`
+
+Now that the necessary packages are installed, you should be able to Knit your document and see the results!
+
+(If you’d like to run your code in the console as well you’ll also need to load the packages there. To do so, run the `library` commands that you see in the RMarkdown document in the console)
+
+
 
