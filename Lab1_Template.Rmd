@@ -1,6 +1,6 @@
 ---
 title: "Lab 01 - Hello R"
-author: "Katherine Shoemaker"
+author: "Dr. Katherine Shoemaker"
 date: "1/23/2020"
 output: html_document
 ---
@@ -15,7 +15,7 @@ library(datasauRus)
 
 ### Exercise 1
 
-(Type your answer to Exercise 1 here. This exercise does not require any R code.)
+(Type your answer to Exercise 1 here. This exercise does not require any R code. **Remove notes like this in your final product**)
 
 ### Exercise 2
 
@@ -39,7 +39,7 @@ dino_data %>%
 
 ### Exercise 3
 
-(Add code and narrative as needed. Note that the R chunks are labeled with `plot-star` and `cor-star` to provide spaces to place the code for plotting and calculating the correlation coefficient. To finish, clean up the narrative by removing these instructions.)
+(Add code and narrative as needed. Note that the R chunks are labeled with `plot-star` and `cor-star` to provide spaces to place the code for plotting and calculating the correlation coefficient. To finish, remember to clean up the narrative by removing these instructions.)
 
 Blah blah blah...
 
