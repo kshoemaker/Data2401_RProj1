@@ -1,5 +1,5 @@
 ---
-title: "Lab 01 - Hello R"
+title: "R Project 1 - Hello R"
 author: "Dr. Katherine Shoemaker"
 date: "1/23/2020"
 output: html_document
