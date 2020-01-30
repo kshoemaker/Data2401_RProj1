@@ -1,0 +1,104 @@
+---
+title: "R Project 1 - Hello R"
+author: "Salman Salekin"
+date: "1/28/2020"
+output: 
+  html_document:
+    fig_height: 3
+    fig_width: 4
+    Theme: Modern
+---
+
+
+### Load packages
+
+```{r load-packages, message=FALSE}
+library(tidyverse) 
+library(datasauRus)
+```
+
+
+### Exercise 1
+
+The datasaurus_dozen is a data frame with (142*13) = 1846 and 3 variables. The variables included in the data frame are:
+
++ __dataset__ : indicates which dataset the data from
++ __x__ : x-values
++ __y__ : y-values
+
+```{r datasaurus_dozen}
+datasaurus_dozen %>%
+  count (dataset) %>%
+  print (13)
+```
+
+### Exercise 2
+
+First let's plot the data in the dino dataset:
+
+```{r plot-dino, fig.height=3, fig.width=6}
+dino_data <- datasaurus_dozen %>%
+  filter(dataset == "dino")
+ggplot(data = dino_data, mapping = aes(x = x, y = y)) +
+  geom_point()
+```
+
+And next calculate the correlation between `x` and `y` in this dataset:
+
+```{r cor-dino}
+dino_data %>%
+  summarize(r = cor(x, y))
+```
+
+### Exercise 3
+
+
+
+```{r plot-star}
+star_data <- datasaurus_dozen %>%
+  filter(dataset == "star")
+ggplot(data = star_data, mapping = aes(x = x, y = y)) + geom_point()
+```
+
+Calculating the correlation between 'x' and 'y' in this dataset:
+
+```{r cor-star}
+star_data %>%
+  summarize(r = cor(x,y))
+```
+
+### Exercise 4
+
+Plotting the data in the circle dataset:
+
+```{r plot-circle}
+circle_data <- datasaurus_dozen %>%
+  filter(dataset == "circle")
+ggplot(data = circle_data, mapping = aes(x = x, y = y)) + geom_point()
+```
+
+Now the correlation between 'x' and 'y' in the circle dataset is:
+
+```{r cor-circle}
+circle_data %>%
+  summarize(r = cor(x,y))
+```
+
+### Exercise 5
+
+Finally, plot all dataset at once and calculate summary correlation coefficients.
+
+```{r plot-all, fig.height=6, fig.width=6}
+ggplot(datasaurus_dozen, aes(x = x, y = y, color = dataset)) + geom_point() + facet_wrap(~ dataset, ncol = 3) + theme(legend.position = "none")
+```
+
+```{r cor-a||}
+datasaurus_dozen %>%
+  group_by(dataset) %>%
+  summarize(r = cor(x,y)) %>%
+  print(13)
+```
+
+
+
+
