@@ -6,6 +6,8 @@ output:
   html_document: 
     fig_width: 12
     fig_height: 9
+    highlight: monochrome
+    theme: lumen
 ---
 
 MAKE SURE YOU READ AND FOLLOW INSTRUCTIONS ON THE INSTRUCTION DOCUMENT. 
