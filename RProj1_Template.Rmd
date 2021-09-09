@@ -47,19 +47,22 @@ dino_data %>%
 
 ### Exercise 3
 
-(Add code and narrative as needed. Note that the R chunks are labeled with `plot-star` and `cor-star` to provide spaces to place the code for plotting and calculating the correlation coefficient. To finish, remember to clean up the narrative by removing these instructions.)
+Let's plot the star data
 
 
 
-```{r plot-star}
-
-
+```{r plot-star, fig.height=3, fig.width=6}
+dino_data <- datasaurus_dozen %>%
+  filter(dataset == "stars")
+ggplot(data = dino_data, mapping = aes(x = x, y = y)) +
+  geom_point()
 ```
 
 I'm some text, you should replace me with more meaningful text...
  
 ```{r cor-star}
-
+dino_data %>%
+  summarize(r = cor(x, y))
 
 ```
 
