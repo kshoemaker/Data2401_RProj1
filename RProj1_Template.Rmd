@@ -5,7 +5,7 @@ date: "Due Sept 8th"
 output: html_document
 ---
 
-MAKE SURE YOU READ AND FOLLOW **ALL** INSTRUCTIONS ON THE INSTRUCTION DOCUMENT. 
+MAKE SURE YOU READ AND FOLLOW INSTRUCTIONS ON THE INSTRUCTION DOCUMENT. 
 
 ### Load packages
 
@@ -17,7 +17,27 @@ library(datasauRus)
 
 ### Exercise 1
 
-(Type your answer to Exercise 1 here. This exercise does not require any R code. **Remove notes like this in the final product that you turn in**)
+There are 1846 rows and 3 columns(variables) included in the data frame. The variables are data set, x-values, and y-values.
+
+```{r}
+
+## # A tibble: 13 x 2
+##    dataset        n
+##    <chr>      <int>
+##  1 away         142
+##  2 bullseye     142
+##  3 circle       142
+##  4 dino         142
+##  5 dots         142
+##  6 h_lines      142
+##  7 high_lines   142
+##  8 slant_down   142
+##  9 slant_up     142
+## 10 star         142
+## 11 v_lines      142
+## 12 wide_lines   142
+## 13 x_shape      142
+```
 
 ### Exercise 2
 
