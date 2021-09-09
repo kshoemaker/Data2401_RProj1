@@ -180,26 +180,33 @@ library(datasauRus)</code></pre>
 <div id="exercise-1" class="section level3">
 <h3>Exercise 1</h3>
 <p>There are 1846 rows and 3 columns(variables) included in the data frame. The variables are data set, x-values, and y-values.</p>
-<pre class="r"><code>## # A tibble: 13 x 2
-##    dataset        n
-##    &lt;chr&gt;      &lt;int&gt;
-##  1 away         142
-##  2 bullseye     142
-##  3 circle       142
-##  4 dino         142
-##  5 dots         142
-##  6 h_lines      142
-##  7 high_lines   142
-##  8 slant_down   142
-##  9 slant_up     142
-## 10 star         142
-## 11 v_lines      142
-## 12 wide_lines   142
-## 13 x_shape      142</code></pre>
+<pre class="r"><code>datasaurus_dozen %&gt;%
+count(dataset) %&gt;%
+print(13)</code></pre>
+<pre><code>## # A tibble:
+## #   13 x 2
+##    dataset   
+##    &lt;chr&gt;     
+##  1 away      
+##  2 bullseye  
+##  3 circle    
+##  4 dino      
+##  5 dots      
+##  6 h_lines   
+##  7 high_lines
+##  8 slant_down
+##  9 slant_up  
+## 10 star      
+## 11 v_lines   
+## 12 wide_lines
+## 13 x_shape   
+## # ... with 1
+## #   more
+## #   variable:
+## #   n &lt;int&gt;</code></pre>
 </div>
 <div id="exercise-2" class="section level3">
 <h3>Exercise 2</h3>
-<p>(The answers for this Exercise are given for you below. But you should clean up some of the narrative so that it only includes what you want to turn in.)</p>
 <p>First let’s plot the data in the dino dataset:</p>
 <pre class="r"><code>dino_data &lt;- datasaurus_dozen %&gt;%
   filter(dataset == &quot;dino&quot;)
