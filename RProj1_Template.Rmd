@@ -1,7 +1,7 @@
 ---
 title: "R Project 1 - Hello R"
-author: "Your Name Goes Here"
-date: "Due Fed 3rd"
+author: "Michelle Pogue"
+date: "Due Sept 8th"
 output: html_document
 ---
 
